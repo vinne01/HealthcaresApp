@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>NewsApp</title>
+    <!-- Internal CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: pink;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 20px;
+            min-height: 70px;
+            border-bottom: #ccc 3px solid;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            animation: fadeIn 2s ease-in;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.6em;
+            margin: 20px 0;
+        }
+        .links a {
+            color: #333;
+            text-decoration: none;
+            background: #e2e2e2;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 0 10px;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+        .links a:hover {
+            background: #333;
+            color: #fff;
+        }
+        .links {
+            text-align: center;
+            margin: 20px 0;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .back-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Madhu Healthcare Services</h1>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f9f9f9;
+                color: #333;
+                line-height: 1.6;
+                padding: 20px;
+            }
+            .description {
+                background: #fff;
+                border-radius: 8px;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+            }
+            h1 {
+                color: #007BFF;
+            }
+        </style>
+    </header>
+
+    <div class="container">
+        <a href="{% url 'tweet_list' %}" class="btn btn-secondary back-button">Back</a>
+        <div class="description">
+            
+            <p>HealthConnect is your go-to app for managing and sharing healthcare services. Get started by registering with your <strong>username</strong>, <strong>email ID</strong>, and <strong>password</strong>. Once registered, log in securely to access your personalized dashboard.</p>
+            <p>As a registered user, you can effortlessly add your healthcare services by providing essential details like <strong>name</strong>, <strong>description</strong>, and <strong>price</strong>. You have complete control over your entries, with the ability to <strong>edit</strong> or <strong>delete</strong> your data anytime.</p>
+            <p>Explore a wide range of healthcare services offered by other users in the app, making it easy to find what you need. Join HealthConnect today and take charge of your healthcare journey!</p>
+        </div>
+        
+        <p>This project was developed by Vinay Kumar Maurya. Below are links to my professional profiles and portfolio:</p>
+        
+        <div class="links">
+            <a href="https://github.com/vinne01" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/vinaymry/" target="_blank">LinkedIn</a>
+            <a href="https://myfirstsportfolio.netlify.app/" target="_blank">Portfolio</a>
+        </div>
+    </div>
+</body>
+</html>
